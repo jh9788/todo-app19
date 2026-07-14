@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: todo-app19-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: todo-app19
+  ports:
+    - protocol: TCP
+      port: 8184
+      targetPort: 5000
+
